@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Guru_99_Bank">
+              <span class="suite-name border-skipped">Guru 99 Bank</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Guru_99_Bank">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Guru_99_Bank">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Guru_99_Bank">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Guru_99_Bank">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Guru_99_Bank">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Guru_99_Bank">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Guru_99_Bank">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">42 methods,  42 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Guru_99_Bank" class="hide-methods skipped suite-Guru_99_Bank"> (hide)</a> <!-- hide-methods skipped suite-Guru_99_Bank -->
+                      <a href="#" panel-name="suite-Guru_99_Bank" class="show-methods skipped suite-Guru_99_Bank"> (show)</a> <!-- show-methods skipped suite-Guru_99_Bank -->
+                    </span>
+                    <div class="method-list-content skipped suite-Guru_99_Bank">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.NewAccountTest" hash-for-method="testAddNewAccount">testAddNewAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.NewCustomerTest" hash-for-method="testAddNewCustomer">testAddNewCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testBlickManagerLink">testBlickManagerLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.EditAccountTest" hash-for-method="testChangeAccountType">testChangeAccountType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.EditAccountTest" hash-for-method="testChangeAccountTypeNew">testChangeAccountTypeNew</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickBalanceEnquiryLink">testClickBalanceEnquiryLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickChangePasswordLink">testClickChangePasswordLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickCustomisedStatementLink">testClickCustomisedStatementLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickDeleteAccountLink">testClickDeleteAccountLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickDeleteCustomerLink">testClickDeleteCustomerLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickDepositLink">testClickDepositLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickEditAccountLink">testClickEditAccountLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickEditCustomerLinkLink">testClickEditCustomerLinkLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickFundTransferLink">testClickFundTransferLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.LogInTest" hash-for-method="testClickGenerateAccess">testClickGenerateAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickMiniStatementLink">testClickMiniStatementLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickNewAccountLink">testClickNewAccountLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickNewCustomerLink">testClickNewCustomerLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.ManagerMenuTest" hash-for-method="testClickWithdrawalLink">testClickWithdrawalLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.DeleteCustomerTest" hash-for-method="testDeleteCustomer">testDeleteCustomer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.DeleteCustomerTest" hash-for-method="testDeleteCustomerDoesNotExist">testDeleteCustomerDoesNotExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.DeleteAccountTest" hash-for-method="testDeleteInvalidAccount">testDeleteInvalidAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.DepositTest" hash-for-method="testDepositInvalidAccount">testDepositInvalidAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.DepositTest" hash-for-method="testDepositValidAccount">testDepositValidAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.EditCustomerTest" hash-for-method="testEditCustomerChangeAddress">testEditCustomerChangeAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.EditCustomerTest" hash-for-method="testEditCustomerChangeAddressNo">testEditCustomerChangeAddressNo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.BalanceEnquiryTest" hash-for-method="testInvalidAccountBalanceEnquiry">testInvalidAccountBalanceEnquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.CustomisedStatementTest" hash-for-method="testInvalidAccountCuatomizedStatement">testInvalidAccountCuatomizedStatement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.MiniStatementTest" hash-for-method="testInvalidAccountMiniStatementTest">testInvalidAccountMiniStatementTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.NewAccountTest" hash-for-method="testInvalidCustomerId">testInvalidCustomerId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.FundTransferTest" hash-for-method="testInvalidFundTransfer">testInvalidFundTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.LogInTest" hash-for-method="testLoginBlankUsernamePassword">testLoginBlankUsernamePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.LogInTest" hash-for-method="testLoginEmptyUsernamePassword">testLoginEmptyUsernamePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.LogInTest" hash-for-method="testLoginInvalidUsernamePassword">testLoginInvalidUsernamePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.DeleteAccountTest" hash-for-method="testUndeleteValidAccount">testUndeleteValidAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.BalanceEnquiryTest" hash-for-method="testValidAccountBalanceEnquiry">testValidAccountBalanceEnquiry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.CustomisedStatementTest" hash-for-method="testValidAccountCuatomizedStatement">testValidAccountCuatomizedStatement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.MiniStatementTest" hash-for-method="testValidAccountMiniStatementTest">testValidAccountMiniStatementTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.FundTransferTest" hash-for-method="testValidFundTransfer">testValidFundTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.LogInTest" hash-for-method="testValidLogIn">testValidLogIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.WithdrawTest" hash-for-method="testWithdrawInvalidAccount">testWithdrawInvalidAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Guru_99_Bank" title="tests.WithdrawTest" hash-for-method="testWithdrawValidAccount">testWithdrawValidAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Guru_99_Bank -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Guru_99_Bank" class="panel Guru_99_Bank">
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.WithdrawTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithdrawInvalidAccount">
+                  </a> <!-- testWithdrawInvalidAccount -->
+                  <span class="method-name">testWithdrawInvalidAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithdrawValidAccount">
+                  </a> <!-- testWithdrawValidAccount -->
+                  <span class="method-name">testWithdrawValidAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.NewAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNewAccount">
+                  </a> <!-- testAddNewAccount -->
+                  <span class="method-name">testAddNewAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidCustomerId">
+                  </a> <!-- testInvalidCustomerId -->
+                  <span class="method-name">testInvalidCustomerId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.DeleteCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteCustomer">
+                  </a> <!-- testDeleteCustomer -->
+                  <span class="method-name">testDeleteCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteCustomerDoesNotExist">
+                  </a> <!-- testDeleteCustomerDoesNotExist -->
+                  <span class="method-name">testDeleteCustomerDoesNotExist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.BalanceEnquiryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidAccountBalanceEnquiry">
+                  </a> <!-- testInvalidAccountBalanceEnquiry -->
+                  <span class="method-name">testInvalidAccountBalanceEnquiry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidAccountBalanceEnquiry">
+                  </a> <!-- testValidAccountBalanceEnquiry -->
+                  <span class="method-name">testValidAccountBalanceEnquiry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.CustomisedStatementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidAccountCuatomizedStatement">
+                  </a> <!-- testInvalidAccountCuatomizedStatement -->
+                  <span class="method-name">testInvalidAccountCuatomizedStatement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidAccountCuatomizedStatement">
+                  </a> <!-- testValidAccountCuatomizedStatement -->
+                  <span class="method-name">testValidAccountCuatomizedStatement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.EditAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangeAccountType">
+                  </a> <!-- testChangeAccountType -->
+                  <span class="method-name">testChangeAccountType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testChangeAccountTypeNew">
+                  </a> <!-- testChangeAccountTypeNew -->
+                  <span class="method-name">testChangeAccountTypeNew</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.NewCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNewCustomer">
+                  </a> <!-- testAddNewCustomer -->
+                  <span class="method-name">testAddNewCustomer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.FundTransferTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidFundTransfer">
+                  </a> <!-- testInvalidFundTransfer -->
+                  <span class="method-name">testInvalidFundTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidFundTransfer">
+                  </a> <!-- testValidFundTransfer -->
+                  <span class="method-name">testValidFundTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.DeleteAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteInvalidAccount">
+                  </a> <!-- testDeleteInvalidAccount -->
+                  <span class="method-name">testDeleteInvalidAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUndeleteValidAccount">
+                  </a> <!-- testUndeleteValidAccount -->
+                  <span class="method-name">testUndeleteValidAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.MiniStatementTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidAccountMiniStatementTest">
+                  </a> <!-- testInvalidAccountMiniStatementTest -->
+                  <span class="method-name">testInvalidAccountMiniStatementTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidAccountMiniStatementTest">
+                  </a> <!-- testValidAccountMiniStatementTest -->
+                  <span class="method-name">testValidAccountMiniStatementTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.ManagerMenuTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlickManagerLink">
+                  </a> <!-- testBlickManagerLink -->
+                  <span class="method-name">testBlickManagerLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickBalanceEnquiryLink">
+                  </a> <!-- testClickBalanceEnquiryLink -->
+                  <span class="method-name">testClickBalanceEnquiryLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickChangePasswordLink">
+                  </a> <!-- testClickChangePasswordLink -->
+                  <span class="method-name">testClickChangePasswordLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickCustomisedStatementLink">
+                  </a> <!-- testClickCustomisedStatementLink -->
+                  <span class="method-name">testClickCustomisedStatementLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickDeleteAccountLink">
+                  </a> <!-- testClickDeleteAccountLink -->
+                  <span class="method-name">testClickDeleteAccountLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickDeleteCustomerLink">
+                  </a> <!-- testClickDeleteCustomerLink -->
+                  <span class="method-name">testClickDeleteCustomerLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickDepositLink">
+                  </a> <!-- testClickDepositLink -->
+                  <span class="method-name">testClickDepositLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickEditAccountLink">
+                  </a> <!-- testClickEditAccountLink -->
+                  <span class="method-name">testClickEditAccountLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickEditCustomerLinkLink">
+                  </a> <!-- testClickEditCustomerLinkLink -->
+                  <span class="method-name">testClickEditCustomerLinkLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickFundTransferLink">
+                  </a> <!-- testClickFundTransferLink -->
+                  <span class="method-name">testClickFundTransferLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickMiniStatementLink">
+                  </a> <!-- testClickMiniStatementLink -->
+                  <span class="method-name">testClickMiniStatementLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickNewAccountLink">
+                  </a> <!-- testClickNewAccountLink -->
+                  <span class="method-name">testClickNewAccountLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickNewCustomerLink">
+                  </a> <!-- testClickNewCustomerLink -->
+                  <span class="method-name">testClickNewCustomerLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickWithdrawalLink">
+                  </a> <!-- testClickWithdrawalLink -->
+                  <span class="method-name">testClickWithdrawalLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.LogInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickGenerateAccess">
+                  </a> <!-- testClickGenerateAccess -->
+                  <span class="method-name">testClickGenerateAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginBlankUsernamePassword">
+                  </a> <!-- testLoginBlankUsernamePassword -->
+                  <span class="method-name">testLoginBlankUsernamePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginEmptyUsernamePassword">
+                  </a> <!-- testLoginEmptyUsernamePassword -->
+                  <span class="method-name">testLoginEmptyUsernamePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginInvalidUsernamePassword">
+                  </a> <!-- testLoginInvalidUsernamePassword -->
+                  <span class="method-name">testLoginInvalidUsernamePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogIn">
+                  </a> <!-- testValidLogIn -->
+                  <span class="method-name">testValidLogIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.EditCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditCustomerChangeAddress">
+                  </a> <!-- testEditCustomerChangeAddress -->
+                  <span class="method-name">testEditCustomerChangeAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditCustomerChangeAddressNo">
+                  </a> <!-- testEditCustomerChangeAddressNo -->
+                  <span class="method-name">testEditCustomerChangeAddressNo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+          <div class="suite-Guru_99_Bank-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.DepositTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDepositInvalidAccount">
+                  </a> <!-- testDepositInvalidAccount -->
+                  <span class="method-name">testDepositInvalidAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDepositValidAccount">
+                  </a> <!-- testDepositValidAccount -->
+                  <span class="method-name">testDepositValidAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Guru_99_Bank-class-skipped -->
+        </div> <!-- panel Guru_99_Bank -->
+        <div panel-name="test-xml-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/Zakia/git/bank99/Guru99Bank/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Guru 99 Bank&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Regrassion Test&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;tests&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.BalanceEnquiryTest&quot;/&gt;
+      &lt;class name=&quot;tests.CustomisedStatementTest&quot;/&gt;
+      &lt;class name=&quot;tests.DeleteAccountTest&quot;/&gt;
+      &lt;class name=&quot;tests.DeleteCustomerTest&quot;/&gt;
+      &lt;class name=&quot;tests.DepositTest&quot;/&gt;
+      &lt;class name=&quot;tests.EditAccountTest&quot;/&gt;
+      &lt;class name=&quot;tests.EditCustomerTest&quot;/&gt;
+      &lt;class name=&quot;tests.FundTransferTest&quot;/&gt;
+      &lt;class name=&quot;tests.LogInTest&quot;/&gt;
+      &lt;class name=&quot;tests.ManagerMenuTest&quot;/&gt;
+      &lt;class name=&quot;tests.MiniStatementTest&quot;/&gt;
+      &lt;class name=&quot;tests.NewAccountTest&quot;/&gt;
+      &lt;class name=&quot;tests.NewCustomerTest&quot;/&gt;
+      &lt;class name=&quot;tests.WithdrawTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regrassion Test --&gt;
+&lt;/suite&gt; &lt;!-- Guru 99 Bank --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Guru 99 Bank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regrassion Test (14 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Guru 99 Bank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Guru 99 Bank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Guru_99_Bank');
+function tableData_Guru_99_Bank() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(42);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testDeleteInvalidAccount')
+data.setCell(0, 2, 'tests.DeleteAccountTest')
+data.setCell(0, 3, 1);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddNewCustomer')
+data.setCell(1, 2, 'tests.NewCustomerTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testValidLogIn')
+data.setCell(2, 2, 'tests.LogInTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testClickBalanceEnquiryLink')
+data.setCell(3, 2, 'tests.ManagerMenuTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testClickMiniStatementLink')
+data.setCell(4, 2, 'tests.ManagerMenuTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testValidFundTransfer')
+data.setCell(5, 2, 'tests.FundTransferTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUndeleteValidAccount')
+data.setCell(6, 2, 'tests.DeleteAccountTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testInvalidAccountCuatomizedStatement')
+data.setCell(7, 2, 'tests.CustomisedStatementTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testEditCustomerChangeAddressNo')
+data.setCell(8, 2, 'tests.EditCustomerTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testDepositInvalidAccount')
+data.setCell(9, 2, 'tests.DepositTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testLoginBlankUsernamePassword')
+data.setCell(10, 2, 'tests.LogInTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testClickChangePasswordLink')
+data.setCell(11, 2, 'tests.ManagerMenuTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testBlickManagerLink')
+data.setCell(12, 2, 'tests.ManagerMenuTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testClickNewCustomerLink')
+data.setCell(13, 2, 'tests.ManagerMenuTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testInvalidFundTransfer')
+data.setCell(14, 2, 'tests.FundTransferTest')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLoginInvalidUsernamePassword')
+data.setCell(15, 2, 'tests.LogInTest')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testClickWithdrawalLink')
+data.setCell(16, 2, 'tests.ManagerMenuTest')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testAddNewAccount')
+data.setCell(17, 2, 'tests.NewAccountTest')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testDeleteCustomerDoesNotExist')
+data.setCell(18, 2, 'tests.DeleteCustomerTest')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testValidAccountBalanceEnquiry')
+data.setCell(19, 2, 'tests.BalanceEnquiryTest')
+data.setCell(19, 3, 0);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testChangeAccountTypeNew')
+data.setCell(20, 2, 'tests.EditAccountTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testClickDeleteAccountLink')
+data.setCell(21, 2, 'tests.ManagerMenuTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testClickDeleteCustomerLink')
+data.setCell(22, 2, 'tests.ManagerMenuTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testWithdrawInvalidAccount')
+data.setCell(23, 2, 'tests.WithdrawTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testClickEditAccountLink')
+data.setCell(24, 2, 'tests.ManagerMenuTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testClickNewAccountLink')
+data.setCell(25, 2, 'tests.ManagerMenuTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testLoginEmptyUsernamePassword')
+data.setCell(26, 2, 'tests.LogInTest')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testValidAccountCuatomizedStatement')
+data.setCell(27, 2, 'tests.CustomisedStatementTest')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testWithdrawValidAccount')
+data.setCell(28, 2, 'tests.WithdrawTest')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testInvalidAccountMiniStatementTest')
+data.setCell(29, 2, 'tests.MiniStatementTest')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testEditCustomerChangeAddress')
+data.setCell(30, 2, 'tests.EditCustomerTest')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testClickEditCustomerLinkLink')
+data.setCell(31, 2, 'tests.ManagerMenuTest')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testClickDepositLink')
+data.setCell(32, 2, 'tests.ManagerMenuTest')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testInvalidAccountBalanceEnquiry')
+data.setCell(33, 2, 'tests.BalanceEnquiryTest')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testValidAccountMiniStatementTest')
+data.setCell(34, 2, 'tests.MiniStatementTest')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testChangeAccountType')
+data.setCell(35, 2, 'tests.EditAccountTest')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testDepositValidAccount')
+data.setCell(36, 2, 'tests.DepositTest')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testClickGenerateAccess')
+data.setCell(37, 2, 'tests.LogInTest')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testClickFundTransferLink')
+data.setCell(38, 2, 'tests.ManagerMenuTest')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testClickCustomisedStatementLink')
+data.setCell(39, 2, 'tests.ManagerMenuTest')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testInvalidCustomerId')
+data.setCell(40, 2, 'tests.NewAccountTest')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testDeleteCustomer')
+data.setCell(41, 2, 'tests.DeleteCustomerTest')
+data.setCell(41, 3, 0);
+window.suiteTableData['Guru_99_Bank']= { tableData: data, tableDiv: 'times-div-Guru_99_Bank'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 ms</span>
+              <div id="times-div-Guru_99_Bank">
+              </div> <!-- times-div-Guru_99_Bank -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Guru 99 Bank</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">13 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.NewAccountTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.BalanceEnquiryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DeleteCustomerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CustomisedStatementTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.EditAccountTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.FundTransferTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.NewCustomerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DeleteAccountTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.MiniStatementTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ManagerMenuTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.LogInTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.EditCustomerTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.DepositTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testSetUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Guru_99_Bank" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.WithdrawTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BalanceEnquiryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidAccountBalanceEnquiry</span>
+                <span class="method-start">8083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidAccountBalanceEnquiry</span>
+                <span class="method-start">8084 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DeleteAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDeleteInvalidAccount</span>
+                <span class="method-start">8085 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CustomisedStatementTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidAccountCuatomizedStatement</span>
+                <span class="method-start">8085 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidAccountCuatomizedStatement</span>
+                <span class="method-start">8085 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DeleteCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDeleteCustomer</span>
+                <span class="method-start">8086 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteCustomerDoesNotExist</span>
+                <span class="method-start">8086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DeleteAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testUndeleteValidAccount</span>
+                <span class="method-start">8086 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.EditAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testChangeAccountType</span>
+                <span class="method-start">8087 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DepositTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDepositInvalidAccount</span>
+                <span class="method-start">8087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDepositValidAccount</span>
+                <span class="method-start">8087 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.EditAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testChangeAccountTypeNew</span>
+                <span class="method-start">8088 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.EditCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testEditCustomerChangeAddress</span>
+                <span class="method-start">8088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEditCustomerChangeAddressNo</span>
+                <span class="method-start">8089 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FundTransferTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidFundTransfer</span>
+                <span class="method-start">8089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidFundTransfer</span>
+                <span class="method-start">8090 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LogInTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testClickGenerateAccess</span>
+                <span class="method-start">8091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginBlankUsernamePassword</span>
+                <span class="method-start">8091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginEmptyUsernamePassword</span>
+                <span class="method-start">8092 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginInvalidUsernamePassword</span>
+                <span class="method-start">8092 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogIn</span>
+                <span class="method-start">8092 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ManagerMenuTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testBlickManagerLink</span>
+                <span class="method-start">8093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickBalanceEnquiryLink</span>
+                <span class="method-start">8093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickChangePasswordLink</span>
+                <span class="method-start">8093 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickCustomisedStatementLink</span>
+                <span class="method-start">8094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickDeleteAccountLink</span>
+                <span class="method-start">8094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickDeleteCustomerLink</span>
+                <span class="method-start">8094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickDepositLink</span>
+                <span class="method-start">8094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickEditAccountLink</span>
+                <span class="method-start">8095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickEditCustomerLinkLink</span>
+                <span class="method-start">8095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickFundTransferLink</span>
+                <span class="method-start">8095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickMiniStatementLink</span>
+                <span class="method-start">8095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickNewAccountLink</span>
+                <span class="method-start">8096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickNewCustomerLink</span>
+                <span class="method-start">8096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClickWithdrawalLink</span>
+                <span class="method-start">8096 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.NewAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddNewAccount</span>
+                <span class="method-start">8097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MiniStatementTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidAccountMiniStatementTest</span>
+                <span class="method-start">8097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.NewAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testInvalidCustomerId</span>
+                <span class="method-start">8097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MiniStatementTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testValidAccountMiniStatementTest</span>
+                <span class="method-start">8097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.NewCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddNewCustomer</span>
+                <span class="method-start">8098 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.WithdrawTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testWithdrawInvalidAccount</span>
+                <span class="method-start">8098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithdrawValidAccount</span>
+                <span class="method-start">8098 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

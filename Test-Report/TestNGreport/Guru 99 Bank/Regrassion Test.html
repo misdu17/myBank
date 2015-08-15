@@ -1,0 +1,372 @@
+<html>
+<head>
+<title>TestNG:  Regrassion Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regrassion Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/42</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 15 13:41:22 EDT 2015</td>
+</tr>
+<tr><td>Total time:</td><td>8 seconds (8940 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.WithdrawTest.testSetUp()'><b>testSetUp</b><br>Test class: tests.WithdrawTest</td>
+<td><div><pre>java.io.FileNotFoundException: /Users/Zakia/git/LocalGuru99Bank/Guru99Bank/src/testData/Workbook4.xls (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at util.ReadData.readDataFromExcel(Unknown Source)
+	at base.TestBase.testSetUp(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1293203138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293203138'><pre>java.io.FileNotFoundException: /Users/Zakia/git/LocalGuru99Bank/Guru99Bank/src/testData/Workbook4.xls (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:93)
+	at util.ReadData.readDataFromExcel(Unknown Source)
+	at base.TestBase.testSetUp(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:641)
+	at org.testng.TestRunner.run(TestRunner.java:609)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LogInTest.testClassSetup()'><b>testClassSetup</b><br>Test class: tests.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogInTest@483bf400</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.NewAccountTest.testAddNewAccount()'><b>testAddNewAccount</b><br>Test class: tests.NewAccountTest</td>
+<td></td>
+<td>0</td>
+<td>tests.NewAccountTest@5f150435</td></tr>
+<tr>
+<td title='tests.NewCustomerTest.testAddNewCustomer()'><b>testAddNewCustomer</b><br>Test class: tests.NewCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>tests.NewCustomerTest@f5f2bb7</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testBlickManagerLink()'><b>testBlickManagerLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.EditAccountTest.testChangeAccountType()'><b>testChangeAccountType</b><br>Test class: tests.EditAccountTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EditAccountTest@282ba1e</td></tr>
+<tr>
+<td title='tests.EditAccountTest.testChangeAccountTypeNew()'><b>testChangeAccountTypeNew</b><br>Test class: tests.EditAccountTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EditAccountTest@282ba1e</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickBalanceEnquiryLink()'><b>testClickBalanceEnquiryLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickChangePasswordLink()'><b>testClickChangePasswordLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickCustomisedStatementLink()'><b>testClickCustomisedStatementLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickDeleteAccountLink()'><b>testClickDeleteAccountLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickDeleteCustomerLink()'><b>testClickDeleteCustomerLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickDepositLink()'><b>testClickDepositLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickEditAccountLink()'><b>testClickEditAccountLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickEditCustomerLinkLink()'><b>testClickEditCustomerLinkLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickFundTransferLink()'><b>testClickFundTransferLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.LogInTest.testClickGenerateAccess()'><b>testClickGenerateAccess</b><br>Test class: tests.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogInTest@483bf400</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickMiniStatementLink()'><b>testClickMiniStatementLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickNewAccountLink()'><b>testClickNewAccountLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickNewCustomerLink()'><b>testClickNewCustomerLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.ManagerMenuTest.testClickWithdrawalLink()'><b>testClickWithdrawalLink</b><br>Test class: tests.ManagerMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ManagerMenuTest@3ecf72fd</td></tr>
+<tr>
+<td title='tests.DeleteCustomerTest.testDeleteCustomer()'><b>testDeleteCustomer</b><br>Test class: tests.DeleteCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DeleteCustomerTest@50cbc42f</td></tr>
+<tr>
+<td title='tests.DeleteCustomerTest.testDeleteCustomerDoesNotExist()'><b>testDeleteCustomerDoesNotExist</b><br>Test class: tests.DeleteCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DeleteCustomerTest@50cbc42f</td></tr>
+<tr>
+<td title='tests.DeleteAccountTest.testDeleteInvalidAccount()'><b>testDeleteInvalidAccount</b><br>Test class: tests.DeleteAccountTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DeleteAccountTest@73035e27</td></tr>
+<tr>
+<td title='tests.DepositTest.testDepositInvalidAccount()'><b>testDepositInvalidAccount</b><br>Test class: tests.DepositTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DepositTest@77f03bb1</td></tr>
+<tr>
+<td title='tests.DepositTest.testDepositValidAccount()'><b>testDepositValidAccount</b><br>Test class: tests.DepositTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DepositTest@77f03bb1</td></tr>
+<tr>
+<td title='tests.EditCustomerTest.testEditCustomerChangeAddress()'><b>testEditCustomerChangeAddress</b><br>Test class: tests.EditCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EditCustomerTest@21a06946</td></tr>
+<tr>
+<td title='tests.EditCustomerTest.testEditCustomerChangeAddressNo()'><b>testEditCustomerChangeAddressNo</b><br>Test class: tests.EditCustomerTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EditCustomerTest@21a06946</td></tr>
+<tr>
+<td title='tests.BalanceEnquiryTest.testInvalidAccountBalanceEnquiry()'><b>testInvalidAccountBalanceEnquiry</b><br>Test class: tests.BalanceEnquiryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.BalanceEnquiryTest@1c53fd30</td></tr>
+<tr>
+<td title='tests.CustomisedStatementTest.testInvalidAccountCuatomizedStatement()'><b>testInvalidAccountCuatomizedStatement</b><br>Test class: tests.CustomisedStatementTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CustomisedStatementTest@75412c2f</td></tr>
+<tr>
+<td title='tests.MiniStatementTest.testInvalidAccountMiniStatementTest()'><b>testInvalidAccountMiniStatementTest</b><br>Test class: tests.MiniStatementTest</td>
+<td></td>
+<td>0</td>
+<td>tests.MiniStatementTest@64c64813</td></tr>
+<tr>
+<td title='tests.NewAccountTest.testInvalidCustomerId()'><b>testInvalidCustomerId</b><br>Test class: tests.NewAccountTest</td>
+<td></td>
+<td>0</td>
+<td>tests.NewAccountTest@5f150435</td></tr>
+<tr>
+<td title='tests.FundTransferTest.testInvalidFundTransfer()'><b>testInvalidFundTransfer</b><br>Test class: tests.FundTransferTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FundTransferTest@13b6d03</td></tr>
+<tr>
+<td title='tests.LogInTest.testLoginBlankUsernamePassword()'><b>testLoginBlankUsernamePassword</b><br>Test class: tests.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogInTest@483bf400</td></tr>
+<tr>
+<td title='tests.LogInTest.testLoginEmptyUsernamePassword()'><b>testLoginEmptyUsernamePassword</b><br>Test class: tests.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogInTest@483bf400</td></tr>
+<tr>
+<td title='tests.LogInTest.testLoginInvalidUsernamePassword()'><b>testLoginInvalidUsernamePassword</b><br>Test class: tests.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogInTest@483bf400</td></tr>
+<tr>
+<td title='tests.DeleteAccountTest.testUndeleteValidAccount()'><b>testUndeleteValidAccount</b><br>Test class: tests.DeleteAccountTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DeleteAccountTest@73035e27</td></tr>
+<tr>
+<td title='tests.BalanceEnquiryTest.testValidAccountBalanceEnquiry()'><b>testValidAccountBalanceEnquiry</b><br>Test class: tests.BalanceEnquiryTest</td>
+<td></td>
+<td>0</td>
+<td>tests.BalanceEnquiryTest@1c53fd30</td></tr>
+<tr>
+<td title='tests.CustomisedStatementTest.testValidAccountCuatomizedStatement()'><b>testValidAccountCuatomizedStatement</b><br>Test class: tests.CustomisedStatementTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CustomisedStatementTest@75412c2f</td></tr>
+<tr>
+<td title='tests.MiniStatementTest.testValidAccountMiniStatementTest()'><b>testValidAccountMiniStatementTest</b><br>Test class: tests.MiniStatementTest</td>
+<td></td>
+<td>0</td>
+<td>tests.MiniStatementTest@64c64813</td></tr>
+<tr>
+<td title='tests.FundTransferTest.testValidFundTransfer()'><b>testValidFundTransfer</b><br>Test class: tests.FundTransferTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FundTransferTest@13b6d03</td></tr>
+<tr>
+<td title='tests.LogInTest.testValidLogIn()'><b>testValidLogIn</b><br>Test class: tests.LogInTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LogInTest@483bf400</td></tr>
+<tr>
+<td title='tests.WithdrawTest.testWithdrawInvalidAccount()'><b>testWithdrawInvalidAccount</b><br>Test class: tests.WithdrawTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WithdrawTest@6979e8cb</td></tr>
+<tr>
+<td title='tests.WithdrawTest.testWithdrawValidAccount()'><b>testWithdrawValidAccount</b><br>Test class: tests.WithdrawTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WithdrawTest@6979e8cb</td></tr>
+</table><p>
+</body>
+</html>

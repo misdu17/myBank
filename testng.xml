@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Guru 99 Bank">
+	<test name="Regrassion Test" verbose="2" preserve-order="true">
+		<packages>
+			<package name="tests"></package>
+		</packages>
+	</test>
+</suite>
