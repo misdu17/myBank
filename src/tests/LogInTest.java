@@ -32,9 +32,8 @@ public class LogInTest extends TestBase {
 	public void testLoginEmptyUsernamePassword() {
 		loginPage.resetButton.click();
 		loginPage.loginButton.click();
-		Alert myalert = loginPage.handleAlert();
-		Assert.assertEquals(myalert.getText(), "User or Password is not valid");
-		myalert.accept();
+		Assert.assertEquals(loginPage.handleAlert().getText(), "User or Password is not valid");
+		loginPage.handleAlert().accept();
 	}
 
 	@Test
@@ -56,9 +55,8 @@ public class LogInTest extends TestBase {
 		Assert.assertEquals(loginPage.blankMessagePassword.getText(),
 				"Password must not be blank");
 		loginPage.loginButton.click();
-		Alert myalert = loginPage.handleAlert();
-		Assert.assertEquals(myalert.getText(), "User or Password is not valid");
-		myalert.accept();
+		Assert.assertEquals(loginPage.handleAlert().getText(), "User or Password is not valid");
+		loginPage.handleAlert().accept();
 	}
 
 	@Test

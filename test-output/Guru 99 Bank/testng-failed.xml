@@ -3,54 +3,58 @@
 <suite name="Failed suite [Guru 99 Bank]">
   <test name="Regrassion Test(failed)">
     <classes>
-      <class name="tests.ManagerMenuTest">
+      <class name="tests.BalanceEnquiryTest">
         <methods>
-          <include name="testClickMiniStatementLink"/>
-          <include name="testClickFundTransferLink"/>
-          <include name="testClickEditCustomerLinkLink"/>
-          <include name="testClickDeleteAccountLink"/>
-          <include name="testClickNewAccountLink"/>
-          <include name="testClickNewCustomerLink"/>
-          <include name="testBlickManagerLink"/>
-          <include name="testClickChangePasswordLink"/>
-          <include name="testClickDeleteCustomerLink"/>
-          <include name="testClickBalanceEnquiryLink"/>
-          <include name="testClickDepositLink"/>
-          <include name="testClickWithdrawalLink"/>
           <include name="testSetUp"/>
-          <include name="testClickEditAccountLink"/>
-          <include name="testClickCustomisedStatementLink"/>
+          <include name="testValidAccountBalanceEnquiry"/>
+          <include name="testInvalidAccountBalanceEnquiry"/>
         </methods>
-      </class> <!-- tests.ManagerMenuTest -->
+      </class> <!-- tests.BalanceEnquiryTest -->
+      <class name="tests.DeleteCustomerTest">
+        <methods>
+          <include name="testDeleteCustomerDoesNotExist"/>
+          <include name="testDeleteCustomer"/>
+        </methods>
+      </class> <!-- tests.DeleteCustomerTest -->
+      <class name="tests.EditAccountTest">
+        <methods>
+          <include name="testChangeAccountType"/>
+          <include name="testChangeAccountTypeNew"/>
+        </methods>
+      </class> <!-- tests.EditAccountTest -->
       <class name="tests.DeleteAccountTest">
         <methods>
           <include name="testDeleteInvalidAccount"/>
           <include name="testUndeleteValidAccount"/>
         </methods>
       </class> <!-- tests.DeleteAccountTest -->
-      <class name="tests.EditCustomerTest">
+      <class name="tests.MiniStatementTest">
         <methods>
-          <include name="testEditCustomerChangeAddress"/>
-          <include name="testEditCustomerChangeAddressNo"/>
+          <include name="testValidAccountMiniStatementTest"/>
+          <include name="testInvalidAccountMiniStatementTest"/>
         </methods>
-      </class> <!-- tests.EditCustomerTest -->
+      </class> <!-- tests.MiniStatementTest -->
       <class name="tests.WithdrawTest">
         <methods>
           <include name="testWithdrawInvalidAccount"/>
           <include name="testWithdrawValidAccount"/>
         </methods>
       </class> <!-- tests.WithdrawTest -->
-      <class name="tests.NewCustomerTest">
+      <class name="tests.EditCustomerTest">
         <methods>
-          <include name="testAddNewCustomer"/>
+          <include name="testEditCustomerChangeAddress"/>
+          <include name="testEditCustomerChangeAddressNo"/>
         </methods>
-      </class> <!-- tests.NewCustomerTest -->
-      <class name="tests.BalanceEnquiryTest">
+      </class> <!-- tests.EditCustomerTest -->
+      <class name="tests.LogInTest">
         <methods>
-          <include name="testValidAccountBalanceEnquiry"/>
-          <include name="testInvalidAccountBalanceEnquiry"/>
+          <include name="testLoginBlankUsernamePassword"/>
+          <include name="testClickGenerateAccess"/>
+          <include name="testLoginInvalidUsernamePassword"/>
+          <include name="testLoginEmptyUsernamePassword"/>
+          <include name="testValidLogIn"/>
         </methods>
-      </class> <!-- tests.BalanceEnquiryTest -->
+      </class> <!-- tests.LogInTest -->
       <class name="tests.CustomisedStatementTest">
         <methods>
           <include name="testInvalidAccountCuatomizedStatement"/>
@@ -69,39 +73,35 @@
           <include name="testDepositInvalidAccount"/>
         </methods>
       </class> <!-- tests.DepositTest -->
-      <class name="tests.EditAccountTest">
-        <methods>
-          <include name="testChangeAccountType"/>
-          <include name="testChangeAccountTypeNew"/>
-        </methods>
-      </class> <!-- tests.EditAccountTest -->
-      <class name="tests.DeleteCustomerTest">
-        <methods>
-          <include name="testDeleteCustomerDoesNotExist"/>
-          <include name="testDeleteCustomer"/>
-        </methods>
-      </class> <!-- tests.DeleteCustomerTest -->
-      <class name="tests.MiniStatementTest">
-        <methods>
-          <include name="testValidAccountMiniStatementTest"/>
-          <include name="testInvalidAccountMiniStatementTest"/>
-        </methods>
-      </class> <!-- tests.MiniStatementTest -->
-      <class name="tests.LogInTest">
-        <methods>
-          <include name="testLoginBlankUsernamePassword"/>
-          <include name="testClickGenerateAccess"/>
-          <include name="testLoginInvalidUsernamePassword"/>
-          <include name="testLoginEmptyUsernamePassword"/>
-          <include name="testValidLogIn"/>
-        </methods>
-      </class> <!-- tests.LogInTest -->
       <class name="tests.NewAccountTest">
         <methods>
           <include name="testInvalidCustomerId"/>
           <include name="testAddNewAccount"/>
         </methods>
       </class> <!-- tests.NewAccountTest -->
+      <class name="tests.NewCustomerTest">
+        <methods>
+          <include name="testAddNewCustomer"/>
+        </methods>
+      </class> <!-- tests.NewCustomerTest -->
+      <class name="tests.ManagerMenuTest">
+        <methods>
+          <include name="testClickMiniStatementLink"/>
+          <include name="testClickFundTransferLink"/>
+          <include name="testClickEditCustomerLinkLink"/>
+          <include name="testClickDeleteAccountLink"/>
+          <include name="testClickNewAccountLink"/>
+          <include name="testClickNewCustomerLink"/>
+          <include name="testBlickManagerLink"/>
+          <include name="testClickChangePasswordLink"/>
+          <include name="testClickDeleteCustomerLink"/>
+          <include name="testClickBalanceEnquiryLink"/>
+          <include name="testClickDepositLink"/>
+          <include name="testClickWithdrawalLink"/>
+          <include name="testClickEditAccountLink"/>
+          <include name="testClickCustomisedStatementLink"/>
+        </methods>
+      </class> <!-- tests.ManagerMenuTest -->
     </classes>
   </test> <!-- Regrassion Test(failed) -->
 </suite> <!-- Failed suite [Guru 99 Bank] -->

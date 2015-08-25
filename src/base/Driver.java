@@ -46,7 +46,7 @@ public class Driver {
 	public WebDriver initFirefoxDriver(String baseUrl) {
 		System.out.println("Launching Firefox browser..");
 		WebDriver driver = new FirefoxDriver();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.navigate().to(baseUrl);
 		return driver;
 	}

@@ -55,7 +55,7 @@ public class TestBase extends Driver{
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		//read data from excel file
 		ReadData readData = new ReadData();
-		dataSheetList = readData.readDataFromExcel("/Users/Zakia/git/LocalGuru99Bank/Guru99Bank/src/testData/Workbook4.xls", "Sheet1");
+		dataSheetList = readData.readDataFromExcel("/Users/Zakia/Documents/Java/basic_practice/Bank/src/testData/Workbook4.xls", "Sheet1");
 		//pages declaration with driver instance
 		loginPage = PageFactory.initElements(driver, LoginPage.class);
 		managerHomePage = PageFactory.initElements(driver, ManagerHomePage.class);	
